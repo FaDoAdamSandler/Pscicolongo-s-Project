@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: rgb(54, 54, 54);
+  color: aliceblue  ;
+}
+
+#app {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 15% 1fr;
+  grid-template-rows: 10% auto 10%;
+  grid-template-areas: 
+    "header header"
+    "sidenav content"
+    "sidenav content";
+}
+
+#header, #content, #sidenav, #footer {
+  border: 1px solid rgb(52, 228, 157);
+}
+
+#header {
+  grid-area: header;
+}
+#content {
+  grid-area: content;
+  display: flex;
+  flex-wrap: wrap;
+}
+#footer {
+  grid-area: footer;
+}
+#sidenav {
+  grid-area: sidenav;
+}
+
+.block {
+  min-width: 400px;
+  height: 330px;
+  border: 1px solid rgb(170, 0, 255);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 80px 60px 20px;
+  flex: 1;
+  text-align: center;
+}
+
+.blocklateral{
+  min-width: 20px;
+  height: 3px;
+  border: 1px solid rgb(170, 0, 255);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 60px 10px 20px;
+  flex: 1;
+}
+
+.sidenav{
+  height: 10px;  
+}
+
+.textopesquisa{
+  padding: 10px 170px;
+  margin: 30px 10px 0px 285px;
+}
+
+.circle{
+
+  height: 3px;
+  border-radius: 8px;
+
+}
+
